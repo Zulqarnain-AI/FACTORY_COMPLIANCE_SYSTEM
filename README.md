@@ -20,10 +20,7 @@ factory-compliance-system/
 │   │   ├── components/
 │   │   └── App.jsx
 │   └── package.json
-├── data/
-│   └── videos/              # Place input .mp4 clips here
-├── outputs/
-│   └── reports/             # Auto-generated JSON/CSV logs
+|
 └── compliance_policy.pdf
 ```
 
@@ -54,10 +51,7 @@ npm install
 npm run dev               # Runs on http://localhost:5173
 ```
 
-### 3. Add Video Clips
-Place `.mp4` clips into `data/videos/`. The system processes them via the `/api/process` endpoint.
-
-### 4. YOLO Model
+### 3. YOLO Model
 The system uses `yolov8n.pt` (auto-downloaded on first run) as a base.
 For best results, fine-tune on factory-specific data using the Kaggle dataset.
 See `backend/src/detection/README_TRAINING.md` for guidance.
