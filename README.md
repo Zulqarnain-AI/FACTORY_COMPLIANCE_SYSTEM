@@ -67,3 +67,5 @@ See `backend/src/detection/README_TRAINING.md` for guidance.
 ## Escalation Routing
 - LOW / MED → DB log only
 - HIGH / CRIT → DB log + WebSocket real-time alert to dashboard
+
+## Due to time limitation I can't fine tune the model
